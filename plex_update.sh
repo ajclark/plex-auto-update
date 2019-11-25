@@ -10,8 +10,8 @@
 # requirements: apt-get install curl jq
 
 # Insane JQ parsing to select both build AND distro. 
-plex_url=$(curl -s https://plex.tv/api/downloads/1.json \
- | jq -r '.computer.Linux.releases[] | select((.build=="linux-ubuntu-x86_64") and .distro=="ubuntu") .url')
+plex_url=$(curl -s https://plex.tv/pms/downloads/5.json \
+ | jq -r '.computer.Linux.releases[] | select((.build=="linux-x86_64") and .distro=="debian") .url')
 
 # Download the latest version of plex and install it
 curl -O $plex_url && dpkg -i ${plex_url##*/}
