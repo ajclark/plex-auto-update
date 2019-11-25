@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Quick shell script to automatically download and install
-# the latest version of Plex Media Server on Debian/Ubuntu.
+# the latest version of Plex Media Server on Debian or Ubuntu.
 #
-# The filters look for Ubuntu (Debian in my case!) strings only
+# The filters look for Debian/Ubuntu strings only
 # but can easily be adapted to Fedora or MacOS if you're a pervert
 # or hipster respectively.
 #
