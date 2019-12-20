@@ -5,8 +5,8 @@ Hard-coded for Debian/Ubuntu. Can be easily adapted for Fedora if that is what f
 `apt-get install jq curl`
 
 ## Usage:
+`root@nas:~# ./update_plex.sh`
 ```
-root@nas:~# ./update_plex.sh 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 83.1M  100 83.1M    0     0  38.8M      0  0:00:02  0:00:02 --:--:-- 38.8M
