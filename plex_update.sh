@@ -14,4 +14,4 @@ plex_url=$(curl -s https://plex.tv/pms/downloads/5.json \
  | jq -r '.computer.Linux.releases[] | select((.build=="linux-x86_64") and .distro=="debian") .url')
 
 # Download the latest version of plex and install it
-curl -O $plex_url && dpkg -i ${plex_url##*/}
+curl -O $plex_url && apt install ./${plex_url##*/}
